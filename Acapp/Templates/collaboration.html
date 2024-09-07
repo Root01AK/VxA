@@ -1,0 +1,140 @@
+{% extends "Base.html" %}
+{% load static %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Avinya Construction Management - Delivering top-tier construction solutions with innovation and precision.">
+    <meta name="keywords" content="construction, architecture, project management, Avinya">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avinya Constructions | Collaborations</title>
+</head>
+<body>
+    <!-- Breadcrumbs starts -->
+    <div class="container-fluid breadcrumbs">
+    <div class="row">
+        <div class="col-md-12">
+        <img src="{% static 'img/Breadcrums/collaboration.jpg' %}" class="breadcrumbs-img" alt="">
+        </div>
+        <div class="breadcrumbs-text text-center col-lg-12">
+        <h1 class="bread-title display-4 display-md-3">Collaborations</h1>
+        </div>
+    </div>
+    </div>
+    <!-- Breadcrums ends -->
+
+        <!-- Display success messages -->
+        {% if messages %}
+        <div aria-live="polite" aria-atomic="true">
+            <div class="toast-container position-fixed top-0 end-0 p-3">
+                {% for message in messages %}
+                    <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header">
+                            <strong class="me-auto">Notification</strong>
+                            <small>Just now</small>
+                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                        <div class="toast-body">
+                            {{ message }}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+<!-- Collaborations starts-->
+<div class="container collaboration mt-5">
+    <div class="row col-lg-12">
+        <div class="col-md-3">
+            <div class="collaboration-info">
+                <div class="collaboration-slide">
+                    <img src="{% static 'img/clients/comfortinn.png' %}" alt="Comfort Inn">
+                    <img src="{% static 'img/clients/Sangam.png' %}" alt="Avinya Constructions">
+                    <img src="{% static 'img/clients/hiltoninn.svg' %}" alt="Hilton Inn">
+                    <img src="{% static 'img/clients/Holidayinn.png' %}" alt="Holiday Inn">
+                    <img src="{% static 'img/clients/hyatthouse.jpg' %}" alt="Hyatt House">
+                    <img src="{% static 'img/clients/starbucks.png' %}" alt="Starbucks">
+                    <img src="{% static 'img/clients/ups-logo.svg' %}" alt="UPS" class="ups-img">
+                </div>
+                <div class="collaboration-slide">
+                    <img src="{% static 'img/clients/comfortinn.png' %}" alt="Comfort Inn">
+                    <img src="{% static 'img/clients/Sangam.png' %}" alt="Avinya Constructions">
+                    <img src="{% static 'img/clients/hiltoninn.svg' %}" alt="Hilton Inn">
+                    <img src="{% static 'img/clients/Holidayinn.png' %}" alt="Holiday Inn">
+                    <img src="{% static 'img/clients/hyatthouse.jpg' %}" alt="Hyatt House">
+                    <img src="{% static 'img/clients/starbucks.png' %}" alt="Starbucks">
+                    <img src="{% static 'img/clients/ups-logo.svg' %}" alt="UPS" class="ups-img">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="form-container">
+                <form method="POST" action="{% url 'collaboration' %}" autocomplete="off">
+                    {% csrf_token %}
+                    <div class="form row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" name="Firstname" id="firstName" placeholder="First Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" name="Lastname" class="form-control" id="lastName" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="form row">
+                        <div class="form-group col-md-6">
+                            <input type="email" name="Email" class="form-control" id="email" placeholder="you@yoursite.com">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="tel" name="Phone" class="form-control" id="phone" placeholder="Phone">
+                        </div>
+                    </div>
+                    <div class="form row">
+                        <div class="form-group col-md-6">
+                            <input type="text" name="CompanyName" class="form-control" id="companyName" placeholder="Company Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <select id="industry" name="Industry" class="form-control">
+                                <option selected>Select an Trade</option>
+                                <option>Electricals</option>
+                                <option>Plumbing</option>
+                                <option>HVAC</option>
+                                <option>Fire and safety</option>
+                                <option>Kitchen hood and fire suppression </option>
+                                <option>Interior finishes- painting</option>
+                                <option>Interior finishes- wall covering.</option>
+                                <option>Interior finishes - tile , carpet and LVT</option>
+                                <option>Custom millwork and cabinets</option>
+                                <option>Construction cleaning</option>
+                                <option>Networking and low voltage </option>
+                                <option>Kitchen appliances </option>
+                                <option>Miscellaneous</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row form-section">
+                        <div class="col-md-12">
+                            <textarea class="form-control" name="Comments" rows="7" placeholder="Leave Your Comments Here..."></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group form-check mt-3 col-md-10 justify-content-center">
+                        <input type="checkbox" class="form-check-input" id="emailOptIn">
+                        <label class="form-check-label" name="email_opt_in" for="emailOptIn">Yes, I would like to receive news and offers from Avinya Construction & Management via email.</label>
+                    </div>
+                    <div class="form-group form-check mt-3 col-md-10">
+                        <input type="checkbox" class="form-check-input" id="phoneOptIn">
+                        <label class="form-check-label" name="phone_opt_in" for="phoneOptIn">Yes, I agree to receive phone calls from Avinya Construction & Management.</label>
+                    </div>
+                    <div class="row form-section justify-content-center mb-5">
+                        <div class="col-md-12 text-center">
+                            <button type="Submit" class="collaboration-readBtn">
+                                <span>Submit</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Collaborations ends-->
+
+</body>
+{% endblock %}

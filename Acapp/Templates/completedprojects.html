@@ -1,0 +1,70 @@
+{% extends "Base.html" %}
+{% load static %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Avinya Construction Management - Delivering top-tier construction solutions with innovation and precision.">
+    <meta name="keywords" content="construction, architecture, project management, Avinya">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avinya Constructions | Our Projects</title>
+</head>
+<body>
+
+<!-- Breadcrumbs starts -->
+<div class="container-fluid breadcrumbs">
+    <div class="row">
+      <div class="col-md-12">
+        <img src="{% static 'img//Breadcrums/projects.jpeg' %}" class="breadcrumbs-img" alt="">
+      </div>
+      <div class="breadcrumbs-text text-center col-lg-12">
+        <h1 class="bread-title"><span>Completed</span>  Projects</h1>
+      </div>
+    </div>
+</div>
+  <!-- Breadcrums ends -->
+   
+  
+  <!-- Services starts -->
+
+  <div class="container my-5">
+    <div class="row">
+        <div class="col-md-4 wow animate__animated animate__bounceInUp" data-wow-duration="3s">
+            <a href="{% url 'hilton' %}">
+                <div class="project-card" style="background-image: url('{% static 'img/gallery/Hilton.jpg' %}');">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Hilton garden inn </h3>
+                            <p>Construction management and general contractor for ground up construction of 120 Room hotel with banquet hall</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 wow animate__animated animate__bounceInUp" data-wow-duration="3s">
+            <a href="{% url 'hyatt' %}">
+                <div class="project-card" style="background-image: url('{% static 'img/gallery/hotel 04.jpg' %}');">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Hyatt Place</h3>
+                            <p>framing, sheetrock and finishing contractor for 110 room hotel with restaurant and meeting room.</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 wow animate__animated animate__bounceInUp" data-wow-duration="3s">
+            <a href="{% url 'clothing' %}">
+                <div class="project-card" style="background-image: url('{% static 'img/gallery/clothing01.jpg' %}');">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Clothing store</h3>
+                            <p>Renovation of 4000SF retail space in Round Rock, Texas.</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+{% endblock %}

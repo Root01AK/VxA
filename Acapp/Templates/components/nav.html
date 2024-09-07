@@ -1,0 +1,49 @@
+{% load static %}
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'img/i.png' %}" alt="Avinya-logo"></a>
+    <button class="navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto ml-auto">
+            <li class="nav-item" id="home-link">
+                <a class="nav-link" href="{% url 'index' %}">HOME</a>
+            </li>
+            <li class="nav-item" id="gallery-link">
+                <a class="nav-link" href="{% url 'service' %}">OUR SERVICES</a>
+            </li>
+            <li class="nav-item dropdown" id="projects-link">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">
+                    OUR PROJECTS
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="{% url 'completedprojects' %}">Completed</a>
+                    <a class="dropdown-item" href="{% url 'latestprojects' %}">Ongoing projects</a>
+                </div>
+            </li>
+        </ul>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item" id="services-link">
+                <a class="nav-link" href="{% url 'gallery' %}">GALLERY</a>
+            </li>
+            <li class="nav-item" id="contact-link">
+                <a class="nav-link" href="{% url 'contact' %}">CONTACT</a>
+            </li>
+            <li class="nav-item" id="collaboration-link">
+                <a class="nav-link" href="{% url 'collaboration' %}">COLLABORATION</a>
+            </li>
+        </ul>
+        <li class="nav-login">
+            <div class="login">
+                <a href="https://avinya.app.go.redteam.com/login" target="_blank"><span class="tooltip">Redteam!</span>
+                    <span class="login-btn">
+                        LOGIN
+                    </span>
+                </a>
+            </div>
+        </li>
+    </div>
+</nav>
+<div class="mobile-menu-overlay"></div>
+<!-- Navbar End -->

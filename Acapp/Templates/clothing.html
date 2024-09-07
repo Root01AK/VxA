@@ -1,0 +1,49 @@
+{% extends "Base.html" %}
+{% load static %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Avinya Construction Management - Delivering top-tier construction solutions with innovation and precision.">
+    <meta name="keywords" content="construction, architecture, project management, Avinya">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avinya Constructions | Projects</title>
+</head>
+<body>
+<!-- Breadcrumbs starts -->
+<div class="container-fluid breadcrumbs">
+    <div class="row">
+      <div class="col-md-12">
+        <img src="{% static 'img//Breadcrums/projects.jpeg' %}" class="breadcrumbs-img" alt="Avinya Projects">
+      </div>
+      <div class="breadcrumbs-text text-center col-lg-12">
+        <h1 class="bread-title"><span>Our</span> Projects</h1>
+      </div>
+    </div>
+</div>
+  <!-- Breadcrums ends -->
+   <!-- Hyatt pics -->
+   <div class="container image-grid">
+    <div class="row">
+        <div class="col-md-4 wow animate__animated animate__fadeInUp">
+            <img src="{% static 'img/gallery/Clothing05.jpg' %}" alt="Avinya Clothing Store">
+        </div>
+        <div class="col-md-4 wow animate__animated animate__fadeInUp">
+            <img src="{% static 'img/gallery/Clothing01.jpg' %}" alt="Avinya Clothing Store">
+        </div>
+        <div class="col-md-4 wow animate__animated animate__fadeInUp">
+            <img src="{% static 'img/gallery/Clothing03.jpg' %}" alt="Avinya Clothing Store">
+        </div>
+    </div>
+    <div class="row mt-4 justify-content-center">
+        <div class="col-md-4 wow animate__animated animate__fadeInUp">
+            <img src="{% static 'img/gallery/Clothing04.jpg' %}" alt="Avinya Clothing Store">
+        </div>
+        <div class="col-md-4  wow animate__animated animate__fadeInUp">
+            <img src="{% static 'img/gallery/Clothing02.jpg' %}" alt="Avinya Clothing Store">
+        </div>
+    </div>
+</div>
+    <!-- Hyatt pics -->
+
+</body>
+{% endblock %}

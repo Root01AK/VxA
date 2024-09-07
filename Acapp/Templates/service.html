@@ -1,0 +1,101 @@
+{% extends "Base.html" %}
+{% load static %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Avinya Construction Management - Delivering top-tier construction solutions with innovation and precision.">
+    <meta name="keywords" content="construction, architecture, project management, Avinya">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avinya Constructions | Our Services</title>
+</head>
+<body>
+<!-- Breadcrumbs starts -->
+<div class="container-fluid breadcrumbs">
+    <div class="row">
+        <div class="col-md-12">
+        <img src="{% static 'img//Breadcrums/services.jpeg' %}" class="breadcrumbs-img" alt="">
+        </div>
+        <div class="breadcrumbs-text text-center col-lg-12">
+        <h1 class="bread-title">Our Services</h1>
+        </div>
+    </div>
+    </div>
+    <!-- Breadcrums ends -->
+
+    <!-- Services starts -->
+
+    <section class="services">
+    <div class="container col-lg-12">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service-box">
+                    <img src="{% static 'img/services/preconstruction.jpg' %}" class="wow animate__animated animate__fadeInDown" data-wow-duration="3s" alt="Avinya Constructions"class="wow animate__animated animate__fadeInDown" data-wow-duration="3s" alt="Avinya Constructions">
+                    <h2 class="service-text text-center">Pre-Construction Services</h2>
+                    <ul class="service-item">
+                        <li>Site Evaluation.</li>
+                        <li>Feasibility Studies.</li>
+                        <li>Budgeting and Estimating.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <img src="{% static 'img/services/design.jpg' %}" class="wow animate__animated animate__fadeInDown" data-wow-duration="3s" alt="Avinya Constructions"class="wow animate__animated animate__fadeInDown" data-wow-duration="3s" alt="Avinya Constructions">
+                    <h2 class="service-text text-center">Design and Engineering</h2>
+                    <ul class="service-item">
+                        <li>Architectural Design.</li>
+                        <li>Interior Design.</li>
+                        <li>Structural Engineering. </li>
+                        <li> MEP Engineering.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <img src="{% static 'img/services/construction.jpg' %}" class="wow animate__animated animate__fadeInDown" data-wow-duration="3s" alt="Avinya Constructions"class="wow animate__animated animate__fadeInDown" data-wow-duration="3s" alt="Avinya Constructions">
+                    <h2 class="service-text text-center">Construction Management</h2>
+                    <ul class="service-item">
+                        <li>Project Management.</li>
+                        <li>Quality Control. </li>
+                        <li>Safety Management.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <img src="{% static 'img/services/general.jpg' %}" class="wow animate__animated animate__fadeInDown" data-wow-duration="3s" alt="Avinya Constructions">
+                    <h2 class="service-text text-center">General Construction</h2>
+                    <ul class="service-item">
+                        <li>Construction Execution.</li>
+                        <li>Subcontractor Coordination.</li>
+                        <li>Material Procurement.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <img src="{% static 'img/services/post.jpg' %}" class="wow animate__animated animate__fadeInDown" data-wow-duration="3s" alt="Avinya Constructions">
+                    <h2 class="service-text text-center">Post-Construction Services</h2>
+                    <ul class="service-item">
+                        <li>Project Closeout.</li>
+                        <li>Warranty Services.</li>
+                        <li>Maintenance Services. </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <img src="{% static 'img/services/speciality.jpg' %}" class="wow animate__animated animate__fadeInDown" data-wow-duration="3s" alt="Avinya Constructions">
+                    <h2 class="service-text text-center">Specialty Services</h2>
+                    <ul class="service-item">
+                        <li>Sustainable Building.</li>
+                        <li>Renovations and Remodeling.</li>
+                        <li>Tenant Improvements.</li>
+                    </ul>
+                </div>
+            </div>            
+        </div>
+    </div>
+    </section>
+</body>
+{% endblock %}

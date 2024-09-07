@@ -1,0 +1,290 @@
+{% extends "Base.html" %}
+{% load static %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Avinya Construction Management - Delivering top-tier construction solutions with innovation and precision.">
+    <meta author="VcraftYu" content="We are providing a web development and end-to-end Web-related services"/>
+    <meta name="keywords" content="construction, architecture, project management, Avinya">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avinya Constructions</title>    
+</head>
+<body>
+
+    <!-- Hero Site Start -->
+    <div class="hero-site">
+        <video autoplay loop muted plays-inline class="back-video">
+        <source src="{% static 'video/Hero BG.mp4' %}" type="video/mp4">
+    </video>
+    <div class="wave-container">
+        <h1 class="hero-heading mb-5">AVINYA</h1>
+        <svg viewBox="0 0 100 20" class="font">
+        <defs>
+            <linearGradient id="gradient">
+                <stop offset="0%" stop-color="#F4BA1A"/> 
+                <stop offset="100%" stop-color="#F4BA1A"/>
+            </linearGradient>
+            <pattern id="wave" x="0" y="3" width="100%" height="100%" patternUnits="userSpaceOnUse">
+                <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)">
+                    <animateTransform
+                        attributeName="transform"
+                        begin="0s"
+                        dur="3s"
+                        type="translate"
+                        from="0,0"
+                        to="40,0"
+                        repeatCount="indefinite" />
+                </path>
+            </pattern>
+        </defs>
+        <text text-anchor="middle" x="50" y="15" font-size="4" fill="white" fill-opacity="0.1" class="custom-font">CONSTRUCTION  & MANAGEMENT</text>
+            <text text-anchor="middle" x="50" y="15" font-size="4" fill="url(#wave)" fill-opacity="1" class="custom-font" stroke="white" stroke-width="0.1">CONSTRUCTION  & MANAGEMENT</text>   
+      </svg>
+    </div>
+  </div>
+  <!-- Hero Site End -->
+
+<!-- About Start -->
+    <div id="aboutus">
+        <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow animate__animated animate__fadeIn" data-wow-duration="1.5s">
+                    <div class="about-img">
+                        <img class="img-fluid" src="{% static 'img/abt4.jpg' %}" alt="Avinya Constructions">
+                        <img class="img-fluid" src="{% static 'img/ab1.jpg' %}" alt="Avinya Constructions">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow animate__animated animate__bounceInUp" data-wow-duration="2s" >
+                    <h4 class="title">ABOUT US</h4>
+                    <h1 class="display-5 mb-4 headings">A Creative Architecture</h1>
+                        <p>Welcome to Avinya Construction Management, where innovation meets precision. At Avinya, we specialize in delivering top-tier construction solutions, blending advanced technology with expert craftsmanship to create exceptional results. Our dedicated team is committed to excellence in every project, whether it's residential, commercial, or industrial.</p>
+                    <p class="mb-4">We pride ourselves on our ability to manage every aspect of construction, from initial design and planning to final execution. Our integrated approach ensures that each project is completed on time, within budget, and to the highest standards of quality.</p>
+                    <div class="d-flex align-items-center mb-5">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center border border-5 border-primary" style="width: 120px; height: 120px;">
+                            <h1 class="display-1 mb-n2 counter" data-toggle="counter-up">10</h1>
+                        </div>
+                        <div class="ps-4">
+                            <h3>Years</h3>
+                            <h3>Working</h3>
+                            <h3 class="mb-0">Experience</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+ 
+<!-- About End -->
+<!-- Why Choose Us Starts -->
+<section class="why-choose-us mt-5 pt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <img src="{% static 'img/crane.png' %}" class="whychoose-img wow animate__animated animate__slideInLeft"
+                    data-wow-duration="2s" alt="Avinya">
+                <img src="{% static 'img/buildings.png' %}" class="whychoose-img-right wow animate__animated animate__slideInRight"
+                    data-wow-duration="2s" alt="Avinya">
+            </div>
+            <div class="col-md-12">
+                <div class="wow animate__animated animate__backInLeft" data-wow-duration="2s">
+                    <h2 class="title">WHY CHOOSE US</h2>
+                    <h3 class="reason-title text-center headings">Reason for choosing us</h3>
+                    <p class="reason-description text-center">At Avinya Construction Management, we understand that your
+                        project is more than just a building – it's a vision brought to life. Here’s why Avinya is the
+                        perfect partner for your construction needs :</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="whychoose-box">
+                            <div class="whychoose-icon"><i class="fas fa-trowel-bricks"></i></div>
+                            <div class="whychoose-text">
+                                <h4>Unmatched Expertise</h4>
+                                <p>With years of experience in the construction industry, our team of professionals
+                                    brings a wealth of knowledge and expertise to every project. From architects and
+                                    engineers to project managers and skilled laborers, we have the right people to
+                                    ensure your project’s success.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="whychoose-box">
+                            <div class="whychoose-icon"><i class="fas fa-lightbulb"></i></div>
+                            <div class="whychoose-text">
+                                <h4>Innovative Solutions</h4>
+                                <p>We stay at the forefront of construction technology, utilizing the latest tools and
+                                    methods to enhance efficiency and quality. Our commitment to innovation ensures that
+                                    we can tackle even the most complex projects with ease and precision.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="whychoose-box">
+                            <div class="whychoose-icon"><i class="fas fa-tools"></i></div>
+                            <div class="whychoose-text">
+                                <h4>Comprehensive Services</h4>
+                                <p>From concept to completion, we offer a full range of construction services. Whether
+                                    it’s site selection, design, engineering, project management, or post-construction
+                                    services, Avinya handles every detail to deliver seamless and stress-free
+                                    experiences.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="whychoose-box">
+                            <div class="whychoose-icon"><i class="fas fa-star"></i></div>
+                            <div class="whychoose-text">
+                                <h4>Quality Assurance</h4>
+                                <p>Quality is at the heart of everything we do. We adhere to strict quality control
+                                    processes and industry standards to ensure that every aspect of your project meets
+                                    the highest levels of excellence. Our goal is to exceed your expectations in every
+                                    way.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="whychoose-box">
+                            <div class="whychoose-icon"><i class="fas fa-tower-cell"></i></div>
+                            <div class="whychoose-text">
+                                <h4>Customer-Centric Approach</h4>
+                                <p>Your satisfaction is our top priority. We work closely with you to understand your
+                                    needs and goals, providing personalized solutions that align with your vision. Our
+                                    transparent communication and collaborative approach keep you informed and involved
+                                    throughout the project.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="whychoose-box">
+                            <div class="whychoose-icon"><i class="fas fa-solar-panel"></i></div>
+                            <div class="whychoose-text">
+                                <h4>Sustainability Commitment</h4>
+                                <p>We are committed to building a sustainable future. Our environmentally-friendly
+                                    practices and sustainable building techniques help minimize environmental impact and
+                                    promote energy efficiency, ensuring that your project is both eco-friendly and
+                                    cost-effective.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="whychoose-box">
+                            <div class="whychoose-icon"><i class="fas fa-clock"></i></div>
+                            <div class="whychoose-text">
+                                <h4>On-Time, On-Budget Delivery</h4>
+                                <p>We understand the importance of timelines and budgets. Our meticulous planning and
+                                    management practices ensure that your project is completed on time and within
+                                    budget, without compromising on quality.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="whychoose-box">
+                            <div class="whychoose-icon"><i class="fas fa-building"></i></div>
+                            <div class="whychoose-text">
+                                <h4>Versatility Across Sectors</h4>
+                                <p>Our expertise spans across various sectors including residential, commercial,
+                                    industrial, and infrastructure. No matter the scope or complexity of your project,
+                                    Avinya has the capabilities to deliver outstanding results.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Why Choose Us Ends -->
+<!-- Latest projects starts -->
+<div class="container mt-5">
+    <h1 class="text-center font-weight-bold ongopro-heading title mb-5">EXPLORE OUR PROJECTS</h1>
+    <div class="row mt-5">
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4 wow animate__animated animate__bounceInUp" data-wow-duration="3s">
+            <div class="project-container">
+                <img src="{% static 'img/clients/Sangam.png' %}" alt="Sangam-pic" class="project-img">
+                <img src="https://themexriver.com/wp/builta/wp-content/uploads/2024/05/p-1-arrow.webp"
+                    alt="Avinya Constructions" class="project-loading-img">
+                <div class="project-content">
+                    <h3>01</h3>
+                    <h1>Sangam Chettinad Indian Cuisine.</h1>
+                    <p>Scope of work: Design, general contracting, procurement and construction management.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4 wow animate__animated animate__bounceInUp" data-wow-duration="3s">
+            <div class="project-container">
+                <img src="{% static 'img/icecream.jpg' %}" alt="Dumunt-pic" class="project-img">
+                <img src="https://themexriver.com/wp/builta/wp-content/uploads/2024/05/p-1-arrow.webp"
+                    alt="Avinya Constructions" class="project-loading-img">
+                <div class="project-content">
+                    <h3>02</h3>
+                    <h1> Dumont Round Rock.</h1>
+                    <p>Scope of work: General contractor. Completed all interior renovation as per brand standards.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4 wow animate__animated animate__bounceInUp" data-wow-duration="3s">
+            <div class="project-container">
+                <img src="{% static 'img/Kizza.jpg' %}" alt="kizza-Avinya" class="project-img">
+                <img src="https://themexriver.com/wp/builta/wp-content/uploads/2024/05/p-1-arrow.webp" alt="Avinya Constructions" class="project-loading-img">
+                <div class="project-content">
+                <h3>03</h3>
+                <h1>Kizza Pizza</h1>
+                <p>Scope of work: Engineering and design consultant, general contractor.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4 wow animate__animated animate__bounceInUp" data-wow-duration="2s">
+            <div class="project-container">
+                <img src="{% static 'img/icecream.jpg' %}" alt="Dumunt-pic" class="project-img">
+                <img src="https://themexriver.com/wp/builta/wp-content/uploads/2024/05/p-1-arrow.webp"
+                    alt="Avinya Constructions" class="project-loading-img">
+                <div class="project-content">
+                    <h3>04</h3>
+                    <h1 class="dd"> Dumont Cedar Park.</h1>
+                    <p>Scope of Work: General contractor. Completed all interior including design management and construction management. </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4 wow animate__animated animate__bounceInUp mx-auto" data-wow-duration="2s">
+            <div class="project-container">
+                <img src="{% static 'img/clients/Sangam.png' %}" alt="Sangam-pic" class="project-img">
+                <img src="https://themexriver.com/wp/builta/wp-content/uploads/2024/05/p-1-arrow.webp"
+                    alt="Avinya Constructions" class="project-loading-img">
+                <div class="project-content">
+                    <h3>05</h3>
+                    <h1>Fine dining restaurant at Ronald Reagan, Leander.</h1>
+                    <p>Scope of work: Pre-construction management, design management, procurement, general contracting.</p>     
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Latest projects ends -->
+<!-- Our Clients -->
+<div class="container clients">
+    <div class="col-md-12 mb-5">
+        <h2 class="title">Our Clients</h2>
+    </div>
+    <div class="logos-slide">
+        <img src="{% static 'img/clients/comfortinn.png' %}" alt="Avinya Constructions">
+        <img src="{% static 'img/clients/hiltoninn.svg' %}" alt="Avinya Constructions">
+        <img src="{% static 'img/clients/Sangam.png' %}" alt="Avinya Constructions">
+        <img src="{% static 'img/clients/Holidayinn.png' %}" alt="Avinya Constructions">
+        <img src="{% static 'img/clients/hyatthouse.jpg' %}" alt="Avinya Constructions">
+        <img src="{% static 'img/clients/starbucks.png' %}" alt="Avinya Constructions">
+        <img src="{% static 'img/clients/ups-logo.svg' %}" alt="Avinya Constructions">
+    </div>
+    <div class="logos-slide">
+        <img src="{% static 'img/clients/comfortinn.png' %}" alt="Avinya Constructions">
+        <img src="{% static 'img/clients/hiltoninn.svg' %}" alt="Avinya Constructions">
+        <img src="{% static 'img/clients/Sangam.png' %}" alt="Avinya Constructions">
+        <img src="{% static 'img/clients/Holidayinn.png' %}" alt="Avinya Constructions">
+        <img src="{% static 'img/clients/hyatthouse.jpg' %}" alt="Avinya Constructions">
+        <img src="{% static 'img/clients/starbucks.png' %}" alt="Avinya Constructions">
+        <img src="{% static 'img/clients/ups-logo.svg' %}" alt="Avinya Constructions">
+    </div>
+</div>
+<!-- Our Clients -->
+</body>
+{% endblock %}

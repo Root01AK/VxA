@@ -1,0 +1,158 @@
+{% extends "Base.html" %}
+{% load static %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Avinya Construction Management - Delivering top-tier construction solutions with innovation and precision.">
+    <meta name="keywords" content="construction, architecture, project management, Avinya">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avinya Constructions | Gallery</title>
+</head>
+<body>
+<!-- Breadcrumbs starts -->
+ <div class="container-fluid breadcrumbs">
+  <div class="row">
+    <div class="col-md-12">
+      <img src="{% static 'img//Breadcrums/gallery.jpeg' %}" class="breadcrumbs-img" alt="">
+    </div>
+    <div class="breadcrumbs-text text-center col-lg-12">
+      <h1 class="bread-title">gallery</h1>
+    </div>
+  </div>
+ </div>
+<!-- Breadcrums ends -->
+
+ <!-- Gallery Start -->
+ <section class="gallery mt-5">
+  <div class="container my-5">
+    <div class="text-center">
+        <h1 class="display-5 mb-4 headings">Glimpse of our latest stunning creations</h1>
+    </div>
+    <div class="text-center mb-4">
+        <ul class="nav gallery-pills justify-content-center">
+            <li class="gallery-item">
+                <a class="gallery-link active" data-filter="all">All</a>
+            </li>
+            <li class="gallery-item">
+                <a class="gallery-link" data-filter="retail">Retail</a>
+            </li>
+            <li class="gallery-item">
+                <a class="gallery-link" data-filter="hospitality">Hospitality</a>
+            </li>
+            <li class="gallery-item">
+                <a class="gallery-link" data-filter="restaurant">Restaurant</a>
+            </li>
+        </ul>
+    </div>
+    <div class="row" id="gallery">
+        <div class="col-lg-4 col-md-6 mb-4 wow animate__animated animate__fadeInUp" data-category="hospitality">
+            <div class="card">
+              <img src="{% static 'img/gallery/hotel 08.jpg' %}" alt="Avinya Constructions"  onclick="openFullScreen(this)">
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 wow animate__animated animate__fadeInUp" data-category="retail">
+          <div class="card">
+            <img src="{% static 'img/gallery/retail02.jpg' %}" alt="Avinya Constructions"  onclick="openFullScreen(this)">
+          </div>
+      </div>
+        <div class="col-lg-4 col-md-6 mb-4 wow animate__animated animate__fadeInUp" data-category="hospitality">
+            <div class="card">
+              <img src="{% static 'img/gallery/hotel 04.jpg' %}" alt="Avinya Constructions"  onclick="openFullScreen(this)">
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 wow animate__animated animate__fadeInUp" data-category="retail">
+          <div class="card">
+            <img src="{% static 'img/gallery/Clothing05.jpg' %}" alt="Avinya Constructions"  onclick="openFullScreen(this)">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 wow animate__animated animate__fadeInUp" data-category="hospitality">
+          <div class="card">
+            <img src="{% static 'img/gallery/Hilton01.jpg' %}" alt="Avinya Constructions"  onclick="openFullScreen(this)">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 wow animate__animated animate__fadeInUp" data-category="restaurant">
+            <div class="card">
+              <img src="{% static 'img/gallery/bar 01.jpg' %}" alt="Avinya Constructions"  onclick="openFullScreen(this)">
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 wow animate__animated animate__fadeInUp" data-category="hospitality">
+          <div class="card">
+            <img src="{% static 'img/gallery/hotel 11.jpg' %}" alt="Avinya Constructions"  onclick="openFullScreen(this)">
+          </div>
+      </div>
+        <div class="col-lg-4 col-md-6 mb-4 wow animate__animated animate__fadeInUp" data-category="retail">
+            <div class="card">
+              <img src="{% static 'img/gallery/clothing.jpg' %}" alt="Avinya Constructions"  onclick="openFullScreen(this)">
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 wow animate__animated animate__fadeInUp" data-category="hospitality">
+          <div class="card">
+            <img src="{% static 'img/gallery/Hilton.jpg' %}" alt="Avinya Constructions"  onclick="openFullScreen(this)">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 wow animate__animated animate__fadeInUp" data-category="restaurant">
+            <div class="card">
+              <img src="{% static 'img/gallery/restaurant02.jpg' %}" alt="Avinya Constructions"  onclick="openFullScreen(this)">
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 wow animate__animated animate__fadeInUp" data-category="hospitality">
+            <div class="card">
+              <img src="{% static 'img/gallery/hotel06.jpg' %}" alt="Avinya Constructions"  onclick="openFullScreen(this)">
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 wow animate__animated animate__fadeInUp" data-category="retail">
+          <div class="card">
+            <img src="{% static 'img/gallery/Clothing04.jpg' %}" alt="Avinya Constructions"  onclick="openFullScreen(this)">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 wow animate__animated animate__fadeInUp" data-category="hospitality">
+            <div class="card">
+              <img src="{% static 'img/gallery/hotel 02.jpg' %}" alt="Avinya Constructions"  onclick="openFullScreen(this)">
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 wow animate__animated animate__fadeInUp" data-category="hospitality">
+            <div class="card">
+              <img src="{% static 'img/gallery/hotel 09.jpg' %}" alt="Avinya Constructions"  onclick="openFullScreen(this)">
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 wow animate__animated animate__fadeInUp" data-category="retail">
+          <div class="card">
+            <img src="{% static 'img/gallery/retail 01.jpg' %}" alt="Avinya Constructions"  onclick="openFullScreen(this)">
+          </div>
+      </div>
+        <div class="col-lg-4 col-md-6 mb-4 wow animate__animated animate__fadeInUp" data-category="hospitality">
+            <div class="card">
+              <img src="{% static 'img/gallery/hotel 03.jpg' %}" alt="Avinya Constructions"  onclick="openFullScreen(this)">
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 wow animate__animated animate__fadeInUp" data-category="retail">
+          <div class="card">
+            <img src="{% static 'img/gallery/Clothing02.jpg' %}" alt="Avinya Constructions"  onclick="openFullScreen(this)">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 wow animate__animated animate__fadeInUp" data-category="hospitality">
+          <div class="card">
+            <img src="{% static 'img/gallery/Hilton02.jpg' %}" alt="Avinya Constructions"  onclick="openFullScreen(this)">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 wow animate__animated animate__fadeInUp" data-category="restaurant">
+          <div class="card">
+            <img src="{% static 'img/gallery/bar 03.jpg' %}" alt="Avinya Constructions"  onclick="openFullScreen(this)">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 wow animate__animated animate__fadeInUp" data-category="hospitality">
+          <div class="card">
+            <img src="{% static 'img/gallery/hotel 12.jpg' %}" alt="Avinya Constructions"  onclick="openFullScreen(this)">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 wow animate__animated animate__fadeInUp" data-category="retail">
+          <div class="card">
+            <img src="{% static 'img/gallery/Clothing01.jpg' %}" alt="Avinya Constructions"  onclick="openFullScreen(this)">
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+  <!-- Gallery End -->
+</body>
+{% endblock %}
